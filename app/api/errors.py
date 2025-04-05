@@ -9,7 +9,7 @@ def error_response(status_code, message=None):
         payload['message'] = message
     return payload, status_code
 
-
+# change in dev
 def bad_request(message):
     return error_response(400, message)
 
