@@ -7,6 +7,8 @@ from app.api.auth import token_auth
 from app.api.errors import bad_request
 
 
+# rebase test2
+
 @bp.route('/users/<int:id>', methods=['GET'])
 @token_auth.login_required
 def get_user(id):
