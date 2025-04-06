@@ -9,7 +9,7 @@ def error_response(status_code, message=None):
         payload['message'] = message
     return payload, status_code
 
-
+# change in dev
 def bad_request(message):
     return error_response(400, message)
 
@@ -17,3 +17,5 @@ def bad_request(message):
 @bp.errorhandler(HTTPException)
 def handle_exception(e):
     return error_response(e.code)
+
+# rebase test2
